@@ -61,7 +61,7 @@
 .dropdown-arrow {
     position: absolute;
     color: inherit;
-    right: 0;
+    right: 5px;
     bottom: 16px;
     cursor: pointer;
     width: 0;
