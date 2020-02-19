@@ -1,0 +1,18 @@
+<div class="input-wrapper">
+    <form>
+        <label class="label-text">{{label}}</label>
+        <input class="input-field" #input
+               type="text" placeholder={{placeholder}}
+               [formControl]="myControl"
+               (click)="open($event)"
+               value="{{ selectedOption }}"/>
+        <span class="flag input-flag" [ngClass]="'flag-'+selectedOption" (click)="open($event)"></span>
+        <span class="dropdown-arrow" (click)="open($event)"></span>
+    </form>
+
+    <ul class="dropdown-select" [ngClass]="status ? 'show' : 'hide'">
+        <li class="dropdown-option" *ngFor="let option of filteredOptions | async" (click)="addClass(option)">
+            <p class="flag" [ngClass]="'flag-'+option">{{option}}</p>
+        </li>
+    </ul>
+</div>

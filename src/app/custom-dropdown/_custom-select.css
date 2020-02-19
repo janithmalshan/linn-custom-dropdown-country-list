@@ -1,0 +1,199 @@
+.input-wrapper {
+    position: relative;
+    width: 320px;
+    margin: auto;
+    padding: 10px 6px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+}
+
+.label-text {
+    font-size: 18px;
+    color: #323232;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.input-wrapper .input-field {
+    width: 100%;
+    height: 40px;
+    line-height: 1;
+    border: none;
+    border-bottom: 1px solid #a8a8a8;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    color: #323232;
+    margin-top: 4px;
+    padding: 2px 20px 3px 8px;
+    outline: 0;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-field:hover {
+    background: #f9f9f9;
+    border-radius: 3px;
+}
+
+.input-wrapper .input-field:focus {
+    border-bottom: 2px solid #0079cc;
+}
+
+.input-wrapper .input-field:disabled {
+    cursor: default;
+    color: #93a1aa;
+    border-bottom: solid 1px #93a1aa;
+}
+
+.input-wrapper .input-field:disabled + .dropdown-arrow {
+    color: #93a1aa;
+}
+
+.input-wrapper form {
+    position: relative;
+    margin: 0 10px;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    color: inherit;
+    right: 0;
+    bottom: 16px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 6px 0 6px;
+    border-color: #6e757d transparent transparent transparent;
+}
+
+.dropdown-select {
+    max-height: 300px;
+    overflow: auto;
+    width: 100%;
+    border-radius: 5px;
+    /*box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .24);*/
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-option {
+    text-decoration: none;
+    padding: 3px 16px;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.flag {
+    line-height: 30px;
+    height: 30px;
+    display: flex;
+    color: #323232;
+}
+
+.flag.input-flag {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.flag:before {
+    width: 30px;
+    height: 30px;
+    content: '';
+    display: inline-block;
+    background-color: #e2e2e2;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+    background-repeat: no-repeat;
+}
+
+.input-flag:before {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: 0;
+}
+
+/*Selected country flags*/
+.flag-Albania:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/al.svg");
+}
+
+.flag-Andorra:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/ad.svg");
+}
+
+.flag-Armenia:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/ar.svg");
+}
+
+.flag-Austria:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/ae.svg");
+}
+
+.flag-Belarus:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/be.svg");
+}
+
+.flag-Belgium:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/bl.svg");
+}
+
+.flag-Bulgaria:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/bf.svg");
+}
+
+.flag-Croatia:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/cr.svg");
+}
+
+.flag-Denmark:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/dm.svg");
+}
+
+.flag-Estonia:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/ee.svg");
+}
+
+.flag-Finland:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/fi.svg");
+}
+
+.flag-France:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/fr.svg");
+}
+
+.flag-Georgia:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/gr.svg");
+}
+
+.flag-Hungary:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/hn.svg");
+}
+
+.flag-Ireland:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/ir.svg");
+}
+
+.flag-Italy:before {
+    background-image: url("https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/flags/1x1/it.svg");
+}
