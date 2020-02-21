@@ -32,7 +32,7 @@ export class CustomSelectComponent {
 
     public open(event: any) {
         // event.srcElement.classList.add("rotate");
-        // this.addClass('');
+        this.addClass('');
 
         this.filteredOptions = this.myControl.valueChanges
             .pipe(
@@ -41,9 +41,9 @@ export class CustomSelectComponent {
             );
     }
 
-    // addClass(option) {
-    //     this.selectedOption = option;
-    //     this.status = !this.status;
-    // }
+    addClass(option: any) {
+        this.selectedOption = option;
+        this.status = !this.status;
+    }
 
 }

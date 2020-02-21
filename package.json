@@ -3,11 +3,10 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "server": "webpack-dev-server --inline --colors --progress --port 3000",
-        "start": "npm run server"
+        "start": "webpack-dev-server --inline --colors --progress --port 3000"
     },
     "author": "",
-    "license": "MIT",
+    "license": "ISC",
     "dependencies": {
         "@angular/compiler": "9.0.0",
         "@angular/core": "9.0.0",
@@ -17,8 +16,7 @@
         "@angular/platform-browser-dynamic": "8.2.4",
         "core-js": "2.5.5",
         "rxjs": "6.5.2",
-        "zone.js": "0.8.29",
-        "reflect-metadata": "0.1.8"
+        "zone.js": "0.8.29"
     },
     "devDependencies": {
         "concurrently": "3.5.1",
