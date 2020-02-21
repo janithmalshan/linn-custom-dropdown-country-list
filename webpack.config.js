@@ -15,6 +15,14 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader' }
+    ],
+    rules: [
+      {
+        test: /\.tsx?/,
+        exclude: [/node_modules/, /\.(spec|e2e)\.ts$/],
+        include: path.resolve(__dirname, 'src'),
+        loader: ['ts-loader']
+      }
     ]
   }
 };
