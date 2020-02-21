@@ -1,11 +1,8 @@
-// @ts-ignore
 import {NgModule} from '@angular/core';
-
-// @ts-ignore
 import {BrowserModule} from '@angular/platform-browser';
-import {AppComponent} from './app.component';
 import {CustomSelectComponent} from './custom-dropdown/custom-select.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {AppComponent} from './app.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, ReactiveFormsModule],

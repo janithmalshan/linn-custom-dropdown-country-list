@@ -1,11 +1,9 @@
-// @ts-ignore
 import {Component, Input} from '@angular/core';
 
 @Component({
-    moduleId: __filename,
     selector: 'my-app',
-    templateUrl: './app.component.html',
-    styleUrls: ['./_app.css']
+    templateUrl: 'src/app/app.component.html',
+    styleUrls: ['src/app/_app.css']
 })
 
 export class AppComponent {

@@ -1,16 +1,22 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
-    "sourceMap": true,
     "skipLibCheck": true,
-    "experimentalDecorators": true,
+    "lib": ["es6", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
     "emitDecoratorMetadata": true,
-    "lib": [
-      "es2015.core"
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "typeRoots": [
+      "./node_modules/@types/"
     ]
   },
-  "includes": [
-    "src/**/*.ts"
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules"
   ]
 }

@@ -1,14 +1,12 @@
-// @ts-ignore
 import {Component, Input} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {map, startWith} from "rxjs/operators";
 import {Observable} from "rxjs";
 
 @Component({
-    moduleId: __filename,
     selector: 'custom-select',
-    templateUrl: './custom-select.html',
-    styleUrls: ['./_custom-select.css']
+    templateUrl: 'src/app/custom-dropdown/custom-select.html',
+    styleUrls: ['src/app/custom-dropdown/_custom-select.css']
 })
 export class CustomSelectComponent {
 
@@ -28,13 +26,13 @@ export class CustomSelectComponent {
 
     private _filter(value: any): string[] {
         let filterValue = value.toString();
-        console.log(this.opt);
-        return this.opt.filter(option => option.toLowerCase().includes(filterValue));
+        // console.log(this.opt);
+        return this.opt.filter((option: any) => option.toLowerCase().includes(filterValue));
     }
 
-    public open(event) {
-        event.srcElement.classList.add("rotate");
-        this.addClass('');
+    public open(event: any) {
+        // event.srcElement.classList.add("rotate");
+        // this.addClass('');
 
         this.filteredOptions = this.myControl.valueChanges
             .pipe(
@@ -43,9 +41,9 @@ export class CustomSelectComponent {
             );
     }
 
-    addClass(option) {
-        this.selectedOption = option;
-        this.status = !this.status;
-    }
+    // addClass(option) {
+    //     this.selectedOption = option;
+    //     this.status = !this.status;
+    // }
 
 }

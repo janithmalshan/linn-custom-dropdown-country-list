@@ -2,12 +2,12 @@
     "name": "angular-linnworks",
     "version": "1.0.0",
     "description": "",
-    "main": "app/main.js",
     "scripts": {
-        "start": "tsc && concurrently \"tsc -w\" \"json-server db.json --static . \" "
+        "server": "webpack-dev-server --inline --colors --progress --port 3000",
+        "start": "npm run server"
     },
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "dependencies": {
         "@angular/compiler": "9.0.0",
         "@angular/core": "9.0.0",
@@ -17,13 +17,15 @@
         "@angular/platform-browser-dynamic": "8.2.4",
         "core-js": "2.5.5",
         "rxjs": "6.5.2",
-        "systemjs": "0.21.3",
-        "zone.js": "0.8.29"
+        "zone.js": "0.8.29",
+        "reflect-metadata": "0.1.8"
     },
     "devDependencies": {
-        "@types/node": "13.7.0",
         "concurrently": "3.5.1",
-        "json-server": "0.12.2",
-        "typescript": "3.7.5"
+        "typescript": "3.7.5",
+        "@types/core-js": "0.9.34",
+        "ts-loader": "1.2.0",
+        "webpack": "1.12.9",
+        "webpack-dev-server": "1.14.0"
     }
 }
